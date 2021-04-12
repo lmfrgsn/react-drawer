@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+$theme-colors: (
+  'primary': #398ee4,
+  'secondary': #6babeb,
+  'danger': #DE233C,
+  'success': #008545
+);
+$font-family-base: 'Montserrat', sans-serif;
+
+@import '~bootstrap/scss/bootstrap';
+
+html,
+body {
+  background-color: #edeff3;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn {
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.empty {
+  opacity: 0.75;
+}

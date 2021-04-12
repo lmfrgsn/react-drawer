@@ -1,0 +1,22 @@
+.header-card {
+  background-color: #fff;
+  padding: 1.5rem 0;
+
+  .header-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    &--helper {
+      color: #5f656f;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+    }
+  }
+
+  .btn-success {
+    @media only screen and (max-width: 768px) {
+      display: block;
+      width: 100%;
+    }
+  }
+}

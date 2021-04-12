@@ -1,0 +1,74 @@
+.plan-type {
+  background-color: #fff;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 4rem 4rem 4rem 6rem;
+  background-size: contain;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  height: 100%;
+
+  &__inner {
+    z-index: 20;
+    position: relative;
+  }
+
+  &.membership {
+    background: #fff url('../assets/bg-circle.png') no-repeat center left;
+
+    &:hover {
+      border-color: #dd7b42;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+    }
+  }
+
+  &.credit {
+    background: #fff url('../assets/bg-rectangle.png') no-repeat center left;
+
+    &:hover {
+      border-color: #ecbc5d;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.0075);
+    cursor: pointer;
+  }
+
+  &.selected {
+    border: 2px solid red;
+  }
+}
+
+.plan-type-buttons {
+  margin: 1.5rem 0;
+
+  // .btn {
+  //   flex-grow: 1;
+  //   margin: 0 2px;
+
+  //   &:first-of-type {
+  //     margin-left: 0;
+  //   }
+
+  //   &:last-of-type {
+  //     margin-right: 0;
+  //   }
+  // }
+
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
